@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+	<include file="$(find imh_platform)/launch/platform_bringup.launch">
+		<arg name="base_controller" value="false"/>
+		<arg name="omnicam" value="true"/>
+		<arg name="velodyne" value="false"/>
+	</include>
+
+	<include file="$(find imh_platform)/launch/joy_teleop.launch"/>
+
+	<!-- <node pkg="omni_mapping" name="orb_node" type="orb_node.py" output="log"/>    -->
+
+</launch>
